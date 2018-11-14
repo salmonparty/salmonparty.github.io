@@ -6,13 +6,38 @@
 <link href="./style.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
-<br/> <br/> <br/> <br/><br/><br/>
+
   <body class="index">
 
-    <div id="introduction" class="boxed" style="background:#777777;">
+    <div id="introduction" class="boxed" style="background:#3CC; border: solid; padding:2px;">
     <h1 class="lobster">Welcome to the salmon party website.</h1>
 <p>We have 3 main beliefs:</p>
 </div>
+<br/>
+<button class="collapsible">Free healthcare</button>
+<div class="content">
+  <p>If I am elected, I would attempt to establish Free Universal healthcare. It is important to keep healthcare as available as possible, to help people who may not have the money to pay for it to stay healthy, and to keep it affordable for people who can afford it. According to the World Health Organization, about 100 million people are currently being kept in poverty by the costs of healthcare, while over 800 million spent at least 10% of their money to pay for healthcare.</p>
+</div>
+<br/>
+
+
+
+<!--Defines box opening and closing-->
+<script>var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
   </body>
   <!--this is the bottom bar-->
