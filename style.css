@@ -30,6 +30,7 @@ div {
   background-color: #F85;
 }
 .content {
+  width:100%;
   padding: 0 18px;
   display: none;
   overflow: hidden;
