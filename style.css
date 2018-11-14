@@ -6,6 +6,7 @@ body {
   background-image: url("./background.jpg");
   background-size: 1920px 1080px
 }
+/*controls button bar itself*/
 .collapsible {
   background-color: #F96;
   color: #444;
