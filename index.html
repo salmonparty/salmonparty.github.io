@@ -9,7 +9,7 @@
 
   <body class="index">
 
-    <div id="introduction" class="boxed" style="background:#3CC; border: solid; padding:2px;">
+    <div id="introduction" class="boxed" style="background:#3CC; border: solid; padding:3px;">
     <h1 class="lobster" style="font-family: 'Lobster',cursive, sans-serif; ">Welcome to the salmon party, if you vote for us it'll go swimmingly.</h1>
 <p>We have 3 main beliefs:</p>
 </div>
@@ -44,14 +44,23 @@
   <li><a href="https://www.commonfloor.com/guide/what-are-the-major-causes-of-water-pollution-in-india-27741.html">Causes of pollution in India</a></li>
 </ul>
 </div>
-
+<br/>
   </body>
   <!--this is the bottom bar-->
   <aside class="SubSidebar">
   <div class="w3-bar w3-black">
   <div class="w3-bar-item w3-hover-red subtext">Website created by Samuel Zien</div>
+  <button id="myBtn" class="w3-black w3-bar-item w3-hover-green subtext">Important site disclaimer</button>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>If you are viewing this site from a search engine or through other methods, it is important to note that this is not a real political party. That was probably obvious, but I don't want to answer emails about this.</p>
   </div>
-  </aside>
+</div>
+</aside>
+
   <!--Defines box opening and closing-->
   <script>var coll = document.getElementsByClassName("collapsible");
   var i;
@@ -66,6 +75,28 @@
         content.style.display = "block";
       }
     });
-  }
+  }var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
   </script>
 </html>
